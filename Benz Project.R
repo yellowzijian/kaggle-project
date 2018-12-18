@@ -1,3 +1,5 @@
+#test#
+
 library(caret)
 library(lattice)
 library(readr)
@@ -6,7 +8,7 @@ library(h2o)
 h2o.init(nthreads=-1)
 #load Data
 train <- fread("~/Desktop/Benz Project/train.csv", stringsAsFactors = T)
-test <- fread("~/Desktop/Benz Project/test.csv", stringsAsFactors = T)
+test <- fread("~/Desktop/Benz Project/test.csv", stringsAsFactors = T) 
 
 train <- train %>% mutate(set = "train")
 
